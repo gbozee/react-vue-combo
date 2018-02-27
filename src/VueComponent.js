@@ -1,10 +1,9 @@
 import React from "react";
 import Vue from "vue";
-import VueApp, { style } from "./VueApp";
+import VueApp from "./VueApp";
 import styled from "styled-components";
-
+Vue.config.productionTip = false
 const Div = styled.div`
-  ${style};
 `;
 class VueComponent extends React.Component {
   state = {
