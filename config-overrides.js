@@ -1,8 +1,9 @@
 function rewireVueJS(config, env) {
-  // config.module.loaders.push({
-  //   test: /\.vue$/,
-  //   loader: 'vue'
-  // });
+  // console.log(JSON.stringify(config.module.rules, null, 2));
+  config.module.rules.push({
+    test: /\.vue$/,
+    loader: 'vue-loader'
+  });
   // config.vue = {
   //   loaders: {
   //     js: 'babel'

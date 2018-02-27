@@ -1,13 +1,23 @@
 import React from "react";
 import Vue from "vue";
-import VueApp from "./VueApp.vue";
+import VueApp, { style } from "./VueApp";
+import styled from "styled-components";
 
+const Div = styled.div`
+  ${style};
+`;
 class VueComponent extends React.Component {
+  state = {
+    name: "Biola"
+  };
   componentDidMount() {
     this.vm = new Vue({
       el: this.node,
       components: { VueApp },
-      template: "<VueApp />"
+      template: "<VueApp />",
+      data: {
+        name: this.state.name
+      }
     });
   }
   componentWillUnmount() {
@@ -15,7 +25,11 @@ class VueComponent extends React.Component {
   }
 
   render() {
-    return <div ref={node => (this.node = node)}  />;
+    return (
+      <Div>
+        <div ref={node => (this.node = node)} />;
+      </Div>
+    );
   }
 }
 

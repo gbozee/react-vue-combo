@@ -9,14 +9,17 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-scripts": "1.1.0",
-    "vue": "2.5.13"
+    "styled-components": "^3.1.6",
+    "vue": "2.5.13",
+    "vue-styled-components": "^1.2.1"
   },
   "devDependencies": {
-    "react-app-rewired": "1.4.1",
     "css-loader": "0.28.10",
-    "vue-html-loader": "1.2.4",
+    "react-app-rewired": "1.4.1",
     "style-loader": "0.20.2",
-    "vue-loader": "14.1.1"
+    "vue-html-loader": "1.2.4",
+    "vue-loader": "14.1.1",
+    "vue-template-compiler": "^2.5.13"
   },
   "scripts": {
     "start": "react-app-rewired start",
