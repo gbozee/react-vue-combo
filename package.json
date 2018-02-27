@@ -1,0 +1,27 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/new",
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-scripts": "1.1.0",
+    "vue": "2.5.13"
+  },
+  "devDependencies": {
+    "react-app-rewired": "1.4.1",
+    "css-loader": "0.28.10",
+    "vue-html-loader": "1.2.4",
+    "style-loader": "0.20.2",
+    "vue-loader": "14.1.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
